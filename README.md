@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+# 🎯Irritainment --> A Sarcastic Cure for Your Screen Addiction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## *Because clearly you need an app to tell you got a life 😏*
 
-Currently, two official plugins are available:
+This project is a React + TypeScript web app that uses TensorFlow.js BlazeFace to detect whether you’re looking at your screen. The twist?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Sometimes it lets you watch videos.
 
-## Expanding the ESLint configuration
+* Sometimes it forces you to look away.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* And it does this on a timer — because we're controlling your screen time like a hawk.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Features
+* **Free Play Mode 🎬**\
+Enjoy your video for a short duration (default: 20s). A countdown timer shows you how long you’re free before Big Brother kicks in.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* **Face Detection Mode 🕵️**\
+BlazeFace detects your face — if you look at the screen, the video pauses. If you look away, it plays. This continues for a fixed duration (default: 60s).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
+* Frontend: React, TypeScript, Tailwind CSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* Face Detection: TensorFlow.js BlazeFace
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Video Control: HTML5 video API
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ How It Works
+* Free Play Mode (20 seconds)
+
+* Countdown timer shows remaining free time
+
+* Face Detection Mode (60 seconds)
+
+* Video pauses if you're looking at the screen
+
+* Video resumes if you look away
+
+* Repeat Forever
+
+* Cycles between free play and face detection until you quit (or rage quit 😂)
+
+## 🤡 Disclaimer
+This app is purely for fun (and sarcasm). If you actually want to control your screen addiction... maybe just, you know, go outside. 🌳
+
+
+## Contribution
+Presently the app only has frontend part done. I will highly appreciate if someone contributes to the backend and makes it a full fledged app. 
+
+Email --> [choudhurysomnath2000@gmail.com](choudhurysomnath2000@gmail.com)
